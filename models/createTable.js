@@ -28,6 +28,7 @@ exports.createTableIfNotExists = async (tableName,fields) => {
                     function (er, result) {
                       if (er) {
                         console.log("Table" ,tableName ,"can not be created due to error.");
+                        console.log(er);
                       } else {
                         console.log(`Table ${tableName} created successfully.`);
                         
